@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Dictionary web app: Define Your World</title>
+
+  <!--============== CSS ==============-->
+  <link rel="stylesheet" href="/starter-code/assets/style.css">
+
+  <!--=========== JAVASCRIPT =============-->
+  <script defer src="/starter-code/assets/script.js"></script>
+</head>
+
+<body>
+  <!--============ HEADING ==============-->
+  <div class="heading">
+
+    <!-- LOGO -->
+    <span class="logo">
+      <img src="/starter-code/assets/images/logo.svg" alt="Logo">
+    </span>
+
+    <!-- FONT && THEME SETTINGS -->
+    <div class="font-theme__settings">
+
+      <!-- FONT SETTINGS -->
+      <div class="dropdownMenu">
+        <h3 class="displaySelectedFont">Sans Serif</h3>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8">
+          <path fill="none" stroke="#A445ED" stroke-width="1.5" d="m1 1 6 6 6-6" />
+        </svg>
+        <div class="font--options active">
+          <h3 id="sans-serif">Sans Serif</h3>
+          <h3 id="serif">Serif</h3>
+          <h3 id="mono">Mono</h3>
+        </div>
+      </div>
+
+      <div class="vl"></div>
+
+      <!-- THEME SETTINGS -->
+      <div class="toggle">
+        <label class="toggle-box">
+          <input type="checkbox" name="checkbox" id="checkbox">
+          <div class="circle"></div>
+        </label>
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+          <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+            d="M1 10.449a10.544 10.544 0 0 0 19.993 4.686C11.544 15.135 6.858 10.448 6.858 1A10.545 10.545 0 0 0 1 10.449Z" />
+        </svg>
+      </div>
+
+    </div>
+  </div>
+
+  <!--=========== SEARCH BAR============ -->
+  <div class="search--bar">
+    <div class="search">
+      <input type="text" placeholder="Search for any word..." name="text" id="search__field">
+      <img src="/starter-code/assets/images/icon-search.svg" class="search__btn">
+    </div>
+    <p class="error--msg hidden">Whoops, can't be empty..</p>
+  </div>
+
+
+
+  <!--========= MAIN CONTENT================ -->
+  <div class="main-content">
+
+    <!--=========== LOADING SPINNER ==========-->
+    <div class="spinner"></div>
+
+    <!--============== CONTENT =============-->
+    <div class="content ">
+      <!-- <div class="wordInfoContainer">
+        <div class="word">
+          <h1 class="title">keyboard</h1>
+          <p class="transcription">/ˈkiːbɔːd/</p>
+        </div>
+        <div class="playBox">
+          <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75">
+            <g fill-rule="evenodd">
+              <circle cx="37.5" cy="37.5" r="37.5" opacity=".25" />
+              <path d="M29 27v21l21-10.5z" />
+            </g>
+          </svg>
+          <audio src="https://api.dictionaryapi.dev/media/pronunciations/en/keyboard-us.mp3"></audio>
+        </div>
+      </div> -->
+
+      <!-- <div class="nounInfoContainer">
+        <div class="part-of-speech__Title">
+          <h3>noun</h3>
+          <div class="line"></div>
+        </div>
+        <div class="nounInfo">
+          <p class="definitionPanel">Meaning</p>
+          <ul>
+            <li>(etc.) A set of keys used to operate a typewriter, computer etc</li>
+            <li>A component of many instruments including the piano, organ, and harpsichord consisting of usually black
+              and white keys that cause different tones to be produced when struck.</li>
+            <li>A device with keys of a musical keyboard, used to control electronic sound-producing devices which may
+              be built into or separate from the keyboard device.</li>
+          </ul>
+          <p class="synonym">Synonmys
+            <span class="synonymWords">electronic keyboard</span>
+          </p>
+        </div>
+      </div>
+      <div class="verbInfoContainer">
+        <div class="part-of-speech__Title">
+          <h3>verb</h3>
+          <div class="line"></div>
+        </div>
+        <div class="nounInfo">
+          <p class="definitionPanel">Meaning</p>
+          <ul>
+            <li>(etc.) A set of keys used to operate a typewriter, computer etc</li>
+            <p class="sentence">"Keyboarding is the part of this job I hate the most"</p>
+          </ul>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="source">
+        <p class="sourceWord">Source</p>
+        <div class="sourceUrl">
+          <a href="https://en.wiktionary.org/wiki/keyboard">https://en.wiktionary.org/wiki/keyboard</a>
+          <img src="/starter-code/assets/images/icon-new-window.svg">
+        </div>
+      </div>
+     </div> -->
+
+      <!--=========== ERROR MESAGE =============-->
+      <!-- <div class="errorMessage hidden">
+        <img src="/starter-code/assets/images/emoji.png" alt="Confused Emoji">
+        <h3>No Definitions Found</h3>
+        <p>Sorry pal, we couldn't find definitions for the word you were looking for.You can try the search again at
+          later
+          time or head to the web instead.</p>
+      </div> -->
+
+    </div>
+
+</body>
+
+</html>
