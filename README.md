@@ -1,1 +1,2 @@
-# temitayo-dictionary-web-app
+# dictionary-web-app
+Built with HTML, CSS and Vanilla Javascript 
